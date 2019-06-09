@@ -1,0 +1,53 @@
+body {
+  font-family: 'Cabin', sans-serif;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: rgba(213, 255, 220, 0.95);
+  border-radius: 20px;
+  border: 2px solid rgba(14, 79, 31, 0.95);
+  padding: 20px;
+}
+
+.card-profile-picture {
+  border-radius: 50%;
+  width: 30%;
+  border: 4px solid rgba(14, 79, 31, 0.95);
+}
+
+.card-profile-name {
+  font-size: 50px;
+  display: inline-block;
+}
+
+.card-profile-description {
+  font-size: 35px;
+  display: inline-block;
+}
+
+.card-hobbies {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.card-hobbies-title {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.card-hobbies-container {
+  display: block;
+  margin: 10px 0;
+}
+
+.card-hobbies-hobby {
+  background-color: #0e4f1f;
+  color: white;
+  padding: 5px;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+}

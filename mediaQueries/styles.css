@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.card {
+  width: 100%;
+  background-color: chocolate;
+  border-radius: 0;
+  padding: 70% 0;
+  text-align: center;
+  height: 100vh;
+}
+
+.card-label {
+  color: white;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+}
+
+@media (min-width: 576px) {
+  .card {
+    width: 90%;
+    margin: 0 auto;
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 10% 0;
+    text-align: center;
+  }
+  
+  .card-label {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+  }
+}
