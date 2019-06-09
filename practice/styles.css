@@ -3,6 +3,17 @@ body {
   box-sizing: border-box;
 }
 
+.card-profile{
+  display: flex;
+  align-items: center;
+}
+
+.card-profile-biography{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card {
   background-color: rgba(213, 255, 220, 0.95);
   border-radius: 20px;
@@ -19,6 +30,7 @@ body {
 .card-profile-name {
   font-size: 50px;
   display: inline-block;
+  margin-left: 30px;
 }
 
 .card-profile-description {
@@ -31,7 +43,9 @@ body {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-hobbies-title {
@@ -42,12 +56,40 @@ body {
 .card-hobbies-container {
   display: block;
   margin: 10px 0;
+  
 }
 
 .card-hobbies-hobby {
   background-color: #0e4f1f;
   color: white;
-  padding: 5px;
+    padding: 5px;
   font-family: 'Anton', sans-serif;
   font-size: 20px;
+}
+
+@media all and (max-width: 600px){
+ .card-profile{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-profile-name {
+    font-size: 30px;
+    display: inline-block;
+  }
+
+  .card-profile-description {
+    font-size: 20px;
+    display: inline-block;
+  }
+
+  .card-hobbies-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .card-hobbies-container label{
+    margin-bottom: 5px;
+  }
 }
